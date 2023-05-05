@@ -11,7 +11,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className='w-screen h-screen bg-black flex flex-col font-sans'>
-        <header className='w-screen h-20 flex flex-row justify-between items-center fixed'>
+      {/*Pc Version and Tablets*/}
+        <header className=' md:w-screen md:h-20 md:flex md:flex-row md:justify-between md:items-center md:fixed hidden'>
           <Image className='  m-4 2xl:w-[10rem] 2xl:h-[5rem] xl:h-[3rem] xl:w-[8rem]'
             src={logo}
             width={200}
@@ -29,6 +30,9 @@ export default function RootLayout({ children }) {
             </button>
             </a>
         </header>
+
+        {/* Mobile Version */}
+        
         {children}
       </body>
     </html>
