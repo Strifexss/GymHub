@@ -5,6 +5,7 @@ export default function landing() {
     <>
     <div id="inicio" className="snap-center bg-fixed w-screen h-screen flex flex-col  items-center md:items-start text-left  justify-start md:justify-center md:pl-[10rem] 2xl:pl-[15rem] md:bg-[url('./images/FundoLanding.png')] bg-[url('./images/FundoLandingMobile.png')] 
     bg-cover bg-no-repeat">
+        <div className="md:translate-y-[-5rem] 2xl:translate-y-[-5rem]">
         <h1 className="text-white text-[2rem] md:text-[2.5rem] 2xl:text-[4rem]  mt-[8rem] md:text-left font-bold mb-[1rem]" >O sistema favorito <br /> dos gestores do <br />segmento fitness</h1>
         <p className="text-white text-[1.2rem] ml-10 md:text-left lg:ml-0 font-thin">Somos dedicados à ajudar você a <br /> transformar seu negocio em um sucesso</p>
         <section className="flex flex-col md:flex-row mt-[1rem] w-[100%] md:justify-start items-center">
@@ -17,6 +18,7 @@ export default function landing() {
             </button> 
             </a>
         </section>
+        </div>
     </div>
     </>
     )
